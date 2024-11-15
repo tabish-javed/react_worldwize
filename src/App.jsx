@@ -14,19 +14,19 @@ const BASE_URL = "http://localhost:8000/cities"
 
 function App () {
   const [cities, setCities] = useState([])
-  const [isLoading, setisLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(function () {
     async function fetchCities () {
       try {
-        setisLoading(true)
+        setIsLoading(true)
         const res = await fetch(`${BASE_URL}`)
         const data = await res.json()
         setCities(data)
       } catch (error) {
         if (error) alert("There was an error loading data!")
       } finally {
-        setisLoading(false)
+        setIsLoading(false)
       }
     }
 
