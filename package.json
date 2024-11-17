@@ -1,5 +1,10 @@
 {
   "name": "worldwize",
+  "author": {
+    "name": "TABISH JAVED",
+    "email": "tabishjaved@hotmail.com",
+    "url": "https://tabishjaved.netlify.app"
+  },
   "private": true,
   "version": "0.0.0",
   "type": "module",
